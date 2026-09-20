@@ -1,0 +1,56 @@
+# Builds the site and publishes it to GitHub Pages on every push to main.
+#
+# This is needed because the portfolio is now a React app: GitHub Pages can only
+# serve static files, and `npm run build` is what turns src/ into those files.
+# The old vanilla site had no build step, which is why it worked without this.
+#
+# One-time setup in the repository:
+#   Settings -> Pages -> Build and deployment -> Source: "GitHub Actions"
+name: Deploy portfolio
+
+on:
+  push:
+    branches: [main]
+  # Lets you re-run a deploy from the Actions tab without pushing a commit.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# If you push twice quickly, finish the newer deploy and drop the older one
+# rather than running both.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

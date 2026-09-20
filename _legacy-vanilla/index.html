@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudarshan K S | Java Full Stack Developer Portfolio</title>
+  <meta name="description" content="Professional portfolio of Sudarshan K S, a Java Full Stack Developer specializing in Spring Boot, MySQL, and scalable backend applications. View my work, education, and contact details.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Blobs -->
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header id="site-header">
+    <div class="nav-container">
+      <a href="#" class="logo" id="logo-link">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+          <path d="M12 2L2 22h20L12 2zm0 3.99L18.66 19H5.34L12 5.99zM11 16h2v2h-2zm0-6h2v4h-2z"/>
+        </svg>
+        <span id="header-logo-text">Sudarshan K S</span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#timeline" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button class="theme-btn" id="theme-toggle" aria-label="Toggle theme">
+          <!-- Sun Icon -->
+          <svg class="sun-icon" viewBox="0 0 24 24">
+            <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L17.3 16.95zM19.36 5.64c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/>
+          </svg>
+          <!-- Moon Icon -->
+          <svg class="moon-icon" viewBox="0 0 24 24">
+            <path d="M12.3 22h-.1c-5.5 0-10-4.5-10-10 0-4.8 3.5-8.9 8.2-9.8.5-.1 1 .3.9.8-.1.4-.4.8-.4 1.2 0 4.4 3.6 8 8 8 .4 0 .8-.1 1.2-.4.5-.3 1 .1.9.7-.9 4.8-5 8.3-9.8 8.3z"/>
+          </svg>
+        </button>
+
+        <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <span class="hero-tag" id="hero-welcome-tag">👋 Welcome to my portfolio</span>
+        <h1 class="hero-title">Hi, I'm <span class="name" id="profile-name">Sudarshan K S</span></h1>
+        <div class="typing-container">
+          I am a <span class="typed-text" id="typed-text"></span>
+        </div>
+        <p class="hero-desc" id="profile-objective">
+          Motivated Computer Science Undergraduate and Java Full Stack Intern. Passionate about building robust, scalable backend services, designing databases, and crafting clean enterprise codebases.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary" id="cta-projects">View Projects</a>
+          <a href="#contact" class="btn btn-secondary" id="cta-contact">Get in Touch</a>
+        </div>
+        <div class="social-links" id="profile-social-links">
+          <!-- Dynamic Links Rendered Here -->
+        </div>
+      </div>
+      <div class="hero-image-container">
+        <div class="hero-image-wrapper" id="avatar-container">
+          <!-- Animated Developer SVG Icon -->
+          <svg class="avatar-svg" viewBox="0 0 200 200" width="100%" height="100%">
+            <defs>
+              <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="var(--accent-primary)" />
+                <stop offset="100%" stop-color="var(--accent-secondary)" />
+              </linearGradient>
+              <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="rgba(34, 211, 238, 0.2)" />
+                <stop offset="100%" stop-color="rgba(99, 102, 241, 0.05)" />
+              </linearGradient>
+            </defs>
+            <!-- Glowing background ring -->
+            <circle cx="100" cy="100" r="85" fill="none" stroke="url(#avatarGrad)" stroke-width="1.5" stroke-dasharray="6 6" />
+            <circle cx="100" cy="100" r="75" fill="rgba(15, 23, 42, 0.4)" />
+            
+            <!-- Code text patterns in BG -->
+            <text x="45" y="60" fill="var(--accent-secondary)" opacity="0.35" font-family="monospace" font-size="8">&lt;code&gt;</text>
+            <text x="125" y="75" fill="var(--accent-primary)" opacity="0.35" font-family="monospace" font-size="8">{...}</text>
+            <text x="40" y="140" fill="var(--text-muted)" opacity="0.2" font-family="monospace" font-size="7">Java.run()</text>
+            
+            <!-- Screen Glow -->
+            <path d="M60 115 L140 115 L150 155 L50 155 Z" fill="url(#screenGrad)" opacity="0.6"/>
+            
+            <!-- Person Silhouette -->
+            <path d="M100 70 A 22 22 0 0 1 122 92 A 22 22 0 0 1 100 114 A 22 22 0 0 1 78 92 A 22 22 0 0 1 100 70 Z" fill="url(#avatarGrad)" />
+            <!-- Glasses -->
+            <path d="M86 88 h10 M104 88 h10 M96 88 a4 4 0 1 1-8 0 M114 88 a4 4 0 1 1-8 0 M96 88 h8" stroke="#ffffff" stroke-width="1.5" fill="none"/>
+            <!-- Body -->
+            <path d="M62 155 c0-15 12-25 28-28 l10 8 l10-8 c16 3 28 13 28 28 Z" fill="url(#avatarGrad)" />
+            
+            <!-- Laptop screen overlay -->
+            <rect x="70" y="140" width="60" height="28" rx="2" fill="var(--bg-secondary)" stroke="var(--border-color)" stroke-width="1.5" />
+            <rect x="75" y="144" width="50" height="2" rx="1" fill="var(--accent-secondary)" />
+            <rect x="75" y="150" width="30" height="2" rx="1" fill="var(--accent-primary)" />
+            <rect x="75" y="156" width="40" height="2" rx="1" fill="var(--text-muted)" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="reveal" id="about">
+    <div class="section-header">
+      <span class="section-subtitle">Introduction</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text" id="profile-about-bio">
+        <!-- Dynamic Bio -->
+      </div>
+      <div class="stats-grid" id="profile-stats-grid">
+        <!-- Dynamic Stats Cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="reveal" id="skills">
+    <div class="section-header">
+      <span class="section-subtitle">Expertise</span>
+      <h2 class="section-title">Technical Skills</h2>
+    </div>
+    
+    <div class="section-action-bar">
+      <div class="skills-filter" id="skills-filter-container">
+        <!-- Dynamic filter buttons -->
+      </div>
+      <button class="btn btn-admin-only btn-add-item" id="btn-add-skill-trigger">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        <span>Add Skill</span>
+      </button>
+    </div>
+
+    <div class="skills-grid" id="skills-grid">
+      <!-- Dynamic Skills Cards -->
+    </div>
+  </section>
+
+  <!-- Project Showcase Section -->
+  <section class="reveal" id="projects">
+    <div class="section-header">
+      <span class="section-subtitle">Portfolio</span>
+      <h2 class="section-title">Featured Projects</h2>
+    </div>
+    
+    <div class="section-action-bar">
+      <div class="skills-filter" id="projects-filter-container">
+        <!-- Dynamic filter buttons -->
+      </div>
+      <button class="btn btn-admin-only btn-add-item" id="btn-add-project-trigger">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        <span>Add Project</span>
+      </button>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+      <!-- Dynamic Project Cards -->
+    </div>
+  </section>
+
+  <!-- Project Reusable Modal -->
+  <div class="modal" id="project-details-modal">
+    <div class="modal-overlay" id="project-modal-overlay"></div>
+    <div class="modal-container">
+      <button class="modal-close" id="project-modal-close" aria-label="Close modal">✕</button>
+      <div class="modal-content" id="project-modal-body-content">
+        <!-- Dynamic modal content generated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Timeline Section (Experience & Education) -->
+  <section class="reveal" id="timeline">
+    <div class="section-header">
+      <span class="section-subtitle">History</span>
+      <h2 class="section-title">Timeline & Experience</h2>
+    </div>
+
+    <div class="section-action-bar" style="justify-content: flex-end; margin-bottom: 2rem;">
+      <button class="btn btn-admin-only btn-add-item" id="btn-add-timeline-trigger">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        <span>Add Event</span>
+      </button>
+    </div>
+
+    <div class="timeline-wrapper">
+      <div class="timeline-line"></div>
+      <div class="timeline-line-glow" id="timeline-glow"></div>
+      <div id="timeline-list">
+        <!-- Dynamic Timeline Items -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="reveal" id="certifications">
+    <div class="section-header">
+      <span class="section-subtitle">Credentials</span>
+      <h2 class="section-title">Certifications & Achievements</h2>
+    </div>
+
+    <div class="section-action-bar" style="justify-content: flex-end; margin-bottom: 2rem;">
+      <button class="btn btn-admin-only btn-add-item" id="btn-add-cert-trigger">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        <span>Add Credential</span>
+      </button>
+    </div>
+
+    <div class="certs-grid" id="certifications-grid">
+      <!-- Dynamic Certifications -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="reveal" id="contact">
+    <div class="section-header">
+      <span class="section-subtitle">Get in touch</span>
+      <h2 class="section-title">Contact Information</h2>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-info-header">
+          <h2 id="contact-header-text">Let's talk!</h2>
+          <p id="contact-sub-text">Are you looking to hire a Java Full Stack Intern or Junior Backend Developer? Feel free to contact me or check my social links.</p>
+        </div>
+
+        <div class="contact-details">
+          <!-- Phone -->
+          <a href="tel:+916363214248" class="contact-item" id="contact-phone-link">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </div>
+            <div class="contact-text">
+              <h4>Phone</h4>
+              <p id="contact-phone-text">+91 63632 14248</p>
+            </div>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:sudarshanksg@gmail.com" class="contact-item" id="contact-email-link">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div class="contact-text">
+              <h4>Email</h4>
+              <p id="contact-email-text">sudarshanksg@gmail.com</p>
+            </div>
+          </a>
+
+          <!-- Location -->
+          <div class="contact-item" id="contact-location">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div class="contact-text">
+              <h4>Location</h4>
+              <p id="contact-location-text">Bengaluru, Karnataka, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <h3>Send a Message</h3>
+        <form class="contact-form" id="recruiter-contact-form">
+          <div class="form-group">
+            <input type="text" id="contact-name" class="form-input" placeholder=" " required>
+            <label for="contact-name" class="form-label">Full Name</label>
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="contact-email-input" class="form-input" placeholder=" " required>
+            <label for="contact-email-input" class="form-label">Email Address</label>
+          </div>
+
+          <div class="form-group">
+            <input type="text" id="contact-subject" class="form-input" placeholder=" " required>
+            <label for="contact-subject" class="form-label">Subject</label>
+          </div>
+
+          <div class="form-group">
+            <textarea id="contact-message" class="form-input" placeholder=" " required></textarea>
+            <label for="contact-message" class="form-label">Message Details</label>
+          </div>
+
+          <div class="form-status" id="form-status-msg"></div>
+
+          <button type="submit" class="btn btn-primary" id="btn-submit-contact" style="align-self: flex-start;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <a href="#" class="footer-logo" id="footer-logo-text">Sudarshan K S</a>
+      <p class="footer-text">Designed & Built with <span>❤️</span> </p>
+    </div>
+  </footer>
+
+  <!-- ======================================================= -->
+  <!-- ADMIN PORTFOLIO EDITOR COMPONENTS                       -->
+  <!-- ======================================================= -->
+
+  <!-- Floating Editor Toggle Button -->
+  <button class="floating-admin-toggle" id="admin-mode-toggle" aria-label="Toggle editor mode" title="Toggle Live Editor Mode">
+    <!-- Pen Icon -->
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+      <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+    </svg>
+  </button>
+
+  <!-- Floating Admin Control Panel (Bottom) -->
+  <div class="admin-panel" id="admin-panel">
+    <div class="admin-panel-container">
+      <div class="admin-panel-header">
+        <span class="admin-dot anim-pulse"></span>
+        <h3>Live Portfolio Editor</h3>
+        <span class="admin-badge">Active</span>
+      </div>
+      <div class="admin-actions">
+        <button class="btn btn-admin-action" id="btn-save-data" title="Save changes to browser memory">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg>
+          <span>Save Changes</span>
+        </button>
+        <button class="btn btn-admin-action btn-secondary" id="btn-export-data" title="Download data configuration JSON file">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+          <span>Export JSON</span>
+        </button>
+        <button class="btn btn-admin-action btn-secondary" id="btn-import-trigger" title="Upload a previously exported JSON config">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v-4h-4v4H7l5 5 5-5h-3z"/></svg>
+          <span>Import JSON</span>
+        </button>
+        <input type="file" id="import-file-input" style="display: none;" accept=".json">
+        <button class="btn btn-admin-action btn-danger" id="btn-reset-data" title="Reset all information to your original resume data">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+          <span>Reset Defaults</span>
+        </button>
+        <button class="btn btn-admin-close" id="btn-close-admin">
+          <span>Exit Editor</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skill Modal Editor -->
+  <div class="modal admin-modal" id="skill-editor-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+      <button class="modal-close" id="btn-close-skill-modal">✕</button>
+      <div class="modal-content">
+        <h2 id="skill-modal-title">Add New Skill</h2>
+        <form class="admin-form" id="skill-form">
+          <input type="hidden" id="edit-skill-index">
+          <div class="form-group">
+            <input type="text" id="skill-name-input" class="form-input" placeholder=" " required>
+            <label for="skill-name-input" class="form-label">Skill Name</label>
+          </div>
+          <div class="form-row">
+            <div class="form-group select-group">
+              <label for="skill-category-input">Category</label>
+              <select id="skill-category-input" required>
+                <option value="languages">Languages</option>
+                <option value="frameworks">Frameworks & Tools</option>
+                <option value="concepts">Core Concepts</option>
+              </select>
+            </div>
+            <div class="form-group select-group">
+              <label for="skill-level-input">Level</label>
+              <select id="skill-level-input" required>
+                <option value="Basics">Basics</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Strong">Strong</option>
+                <option value="Advanced">Advanced</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea id="skill-desc-input" class="form-input" placeholder=" " required></textarea>
+            <label for="skill-desc-input" class="form-label">Brief Description</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="skill-tags-input" class="form-input" placeholder=" " title="Comma-separated list, e.g. OOP, JDBC, MVC">
+            <label for="skill-tags-input" class="form-label">Sub-skills/Tags (Comma Separated)</label>
+          </div>
+          <button type="submit" class="btn btn-primary" id="btn-save-skill">Save Skill</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Modal Editor -->
+  <div class="modal admin-modal" id="project-editor-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+      <button class="modal-close" id="btn-close-project-modal">✕</button>
+      <div class="modal-content">
+        <h2 id="project-modal-title">Add New Project</h2>
+        <form class="admin-form" id="project-form">
+          <input type="hidden" id="edit-project-id">
+          <div class="form-group">
+            <input type="text" id="project-title-input" class="form-input" placeholder=" " required>
+            <label for="project-title-input" class="form-label">Project Title</label>
+          </div>
+          <div class="form-row">
+            <div class="form-group select-group">
+              <label for="project-category-input">Category Filter</label>
+              <select id="project-category-input" required>
+                <option value="springboot">Spring Boot</option>
+                <option value="j2ee">J2EE / MVC</option>
+                <option value="frontend">Frontend / React</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="text" id="project-tech-badges" class="form-input" placeholder=" " required title="Comma-separated list, e.g. React, Spring Boot, MySQL">
+              <label for="project-tech-badges" class="form-label">Main Badges (Comma Separated)</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea id="project-short-desc" class="form-input" placeholder=" " required></textarea>
+            <label for="project-short-desc" class="form-label">Short Description (for Project Card)</label>
+          </div>
+          <div class="form-group">
+            <textarea id="project-long-desc" class="form-input" placeholder=" " required></textarea>
+            <label for="project-long-desc" class="form-label">Detailed Project Overview (for Popup Modal)</label>
+          </div>
+          <div class="form-group">
+            <textarea id="project-highlights" class="form-input" placeholder=" " title="One feature highlight per line" style="height: 100px;"></textarea>
+            <label for="project-highlights" class="form-label">Core Feature Highlights (One per line)</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="project-tech-details" class="form-input" placeholder=" " required title="Comma-separated full tech stack list">
+            <label for="project-tech-details" class="form-label">Full Tech Stack Details (Comma Separated)</label>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="url" id="project-github-input" class="form-input" placeholder=" ">
+              <label for="project-github-input" class="form-label">GitHub URL</label>
+            </div>
+            <div class="form-group">
+              <input type="url" id="project-live-input" class="form-input" placeholder=" ">
+              <label for="project-live-input" class="form-label">Live Demo URL (Optional)</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" id="btn-save-project">Save Project</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Timeline Modal Editor -->
+  <div class="modal admin-modal" id="timeline-editor-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+      <button class="modal-close" id="btn-close-timeline-modal">✕</button>
+      <div class="modal-content">
+        <h2 id="timeline-modal-title">Add Timeline Event</h2>
+        <form class="admin-form" id="timeline-form">
+          <input type="hidden" id="edit-timeline-index">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="timeline-date-input" class="form-input" placeholder=" " required title="e.g. Jan 2026 - Present or 2022 - 2026">
+              <label for="timeline-date-input" class="form-label">Duration / Date Range</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="timeline-title-input" class="form-input" placeholder=" " required>
+              <label for="timeline-title-input" class="form-label">Role or Degree Title</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" id="timeline-company-input" class="form-input" placeholder=" " required>
+            <label for="timeline-company-input" class="form-label">Organization / Institution Name</label>
+          </div>
+          <div class="form-group">
+            <textarea id="timeline-details-input" class="form-input" placeholder=" " required title="One detail bullet per line" style="height: 120px;"></textarea>
+            <label for="timeline-details-input" class="form-label">Key Details / Bullet Points (One per line)</label>
+          </div>
+          <button type="submit" class="btn btn-primary" id="btn-save-timeline">Save Event</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certification Modal Editor -->
+  <div class="modal admin-modal" id="cert-editor-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+      <button class="modal-close" id="btn-close-cert-modal">✕</button>
+      <div class="modal-content">
+        <h2 id="cert-modal-title">Add Certification</h2>
+        <form class="admin-form" id="cert-form">
+          <input type="hidden" id="edit-cert-index">
+          <div class="form-group">
+            <input type="text" id="cert-title-input" class="form-input" placeholder=" " required>
+            <label for="cert-title-input" class="form-label">Certification Name</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="cert-issuer-input" class="form-input" placeholder=" " required>
+            <label for="cert-issuer-input" class="form-label">Issuing Authority / Issuer</label>
+          </div>
+          <div class="form-group">
+            <textarea id="cert-desc-input" class="form-input" placeholder=" " required></textarea>
+            <label for="cert-desc-input" class="form-label">Short Description / Key Learnings</label>
+          </div>
+          <button type="submit" class="btn btn-primary" id="btn-save-cert">Save Certification</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
