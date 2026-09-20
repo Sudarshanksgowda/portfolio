@@ -30,10 +30,9 @@ export const profile = {
   phone: '+91 63632 14248',
   email: 'sudarshanksg@gmail.com',
 
-  // TODO: confirm these three are your real profile URLs before publishing.
-  github: 'https://github.com/sudarshanksg',
-  linkedin: 'https://linkedin.com/in/sudarshanksg',
-  leetcode: 'https://leetcode.com/u/sudarshanksg',
+  github: 'https://github.com/Sudarshanksgowda',
+  linkedin: 'https://www.linkedin.com/in/sudarshan-k-s-',
+  leetcode: 'https://leetcode.com/u/hpoHYJFP7Q',
 
   // Put your CV in /public and name it here, or set to '' to hide the button.
   resumeFile: '',
@@ -164,7 +163,7 @@ export const projects = [
       'GitHub',
     ],
     badges: ['Spring Boot', 'Microservices', 'MySQL'],
-    github: 'https://github.com/sudarshanksg',
+    github: 'https://github.com/Sudarshanksgowda/MicroserviceEcomm',
     live: '',
   },
   {
@@ -185,7 +184,7 @@ export const projects = [
     ],
     tech: ['React JS', 'JavaScript', 'HTML', 'CSS', 'Cryptocurrency API', 'Git', 'GitHub'],
     badges: ['React', 'REST API', 'Responsive'],
-    github: 'https://github.com/sudarshanksg',
+    github: 'https://github.com/Sudarshanksgowda/CryptoCoinTracking',
     live: '',
   },
   {
@@ -206,7 +205,7 @@ export const projects = [
     ],
     tech: ['Java', 'J2EE', 'JDBC', 'Servlets', 'JSP', 'MySQL', 'HTML', 'CSS', 'Git', 'GitHub'],
     badges: ['J2EE', 'Servlets & JSP', 'MySQL'],
-    github: 'https://github.com/sudarshanksg',
+    github: 'https://github.com/Sudarshanksgowda/User-Managment-J2EE',
     live: '',
   },
 ];
